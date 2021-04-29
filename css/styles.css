@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+.mainContainer {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* TOP CONTAINER */
+
+.topContainer {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;  
+}
+
+/* TOP-LEFT CONTAINER */
+
+.topContainer .leftContainer {
+    background-image: url('../images/desktop-image-hero-1.jpg');
+    background-size: cover;
+
+    width: 60%;
+    height: 100%;
+}
+
+.topContainer .leftContainer .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 4rem 5rem;
+}
+
+.topContainer .leftContainer .navBar .logo {
+    padding-right: 90px;
+}
+
+.topContainer .leftContainer .navBar .navItem {
+    padding-right: 50px;
+    font-weight: 600;
+    color: rgb(236, 236, 236);
+    cursor:pointer;
+}
+
+.topContainer .leftContainer .navBar .navItem:hover {
+    color: white;
+}
+
+/* TOP-RIGHT CONTAINER */
+
+.topContainer .rightContainer {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.topContainer .rightContainer .CTA {
+    margin: auto;
+    display:none;
+}
+
+.topContainer .rightContainer .CTA .title {
+    font-size: 2.5rem;
+    padding: 2rem 7rem 1.5rem;
+    font-weight: 600;
+}
+
+.topContainer .rightContainer .CTA .subTitle {
+    font-size: 0.9rem; 
+    padding: 0 7rem 2rem;
+    color:rgb(177, 177, 177);;
+}
+
+.topContainer .rightContainer .CTA .shop {
+    font-size: 0.8rem;
+    letter-spacing: 0.7rem;
+    padding: 0 7rem;
+    cursor: pointer;
+}
+
+.topContainer .rightContainer .blackBox {
+    background-color: black;
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topContainer .rightContainer .blackBox .angle {
+    height: 30%;
+    cursor: pointer;
+}
+
+.bottomContainer {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomContainer .leftContainer {
+    width: 30%;
+    height: 100%;
+    background-image: url("../images/image-about-dark.jpg");
+    background-size: cover;
+
+}
+
+.bottomContainer .midContainer {
+    width: calc(30% + 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottomContainer .midContainer .title {
+    font-size: 0.9rem;
+    letter-spacing: 0.4rem;
+    padding: 2rem 3.5rem 1rem;
+    font-weight: 700;
+}
+
+.bottomContainer .midContainer .subTitle {
+    font-size: 0.9rem; 
+    padding: 0 3.5rem 2rem;
+    color:rgb(177, 177, 177);
+}
+
+.bottomContainer .rightContainer {
+    width: calc(40% - 10rem);
+    height:100%;
+    background-image: url("../images/image-about-light.jpg");
+    background-size: cover;
+}
